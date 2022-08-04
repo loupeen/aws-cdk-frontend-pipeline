@@ -1,0 +1,40 @@
+{
+  "name": "aws-cdk-frontend-pipeline",
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "AWS cdk-helper to easily setup and create new pipelines for multi-account setups.",
+  "keywords": [
+    "aws",
+    "cdk",
+    "frontend-pipeline"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loupeen/aws-cdk-frontend-pipeline"
+  },
+  "bin": {
+    "aws-cdk-frontend-pipeline": "bin/aws-cdk-frontend-pipeline.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk",
+    "refresh": "rm -rf ./node_modules ./package-lock.json && npm install"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.6",
+    "@types/node": "18.6.3",
+    "@types/prettier": "2.6.4",
+    "jest": "^28.1.3",
+    "ts-jest": "^28.0.7",
+    "aws-cdk": "2.35.0",
+    "ts-node": "^10.9.1",
+    "typescript": "~4.7.4"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.35.0",
+    "constructs": "^10.1.66",
+    "source-map-support": "^0.5.21"
+  }
+}
